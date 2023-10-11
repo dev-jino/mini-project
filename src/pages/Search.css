@@ -1,0 +1,434 @@
+.search {
+    display: flex;
+    height: 1024px;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+    background-color: #ffffff;
+    width: 100%;
+    min-width: 1440px;
+  }
+  
+  .search .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    align-items: center;
+    position: relative;
+  }
+  
+  .search .header {
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    align-items: center;
+    padding: 0px 10px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    background-color: #8f8ff1;
+  }
+  
+  .search .container {
+    display: flex;
+    width: 1032px;
+    height: 70px;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0px;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .search .div {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    gap: 574px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    margin-bottom: -10px;
+  }
+  
+  .search .logo-icon {
+    position: relative;
+    flex: 0 0 auto;
+    height: 60px;
+  }
+  
+  .search .logo-text {
+    position: absolute;
+    width: 82px;
+    top: 15px;
+    left: 43px;
+    font-family: "Inter-Black", Helvetica;
+    font-weight: 900;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .search .logo-img {
+    position: absolute;
+    width: 42px;
+    height: 29px;
+    top: -1px;
+    left: 0;
+    object-fit: cover;
+  }
+  
+  .search .header-input {
+    position: absolute;
+    width: 503px;
+    height: 44px;
+    top: 3px;
+    left: 185px;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+  }
+  
+  .search .img {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 2px;
+    left: 22px;
+  }
+  
+  .search .main-menu {
+    justify-content: center;
+    flex: 1;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .search .menu-item {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 0px 10px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .search .menu-item-txt {
+    width: 50px;
+    position: relative;
+    height: 20px;
+    margin-top: -1px;
+    font-family: "Inter-Black", Helvetica;
+    font-weight: 900;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .search .text-wrapper {
+    width: 60px;
+    position: relative;
+    height: 20px;
+    margin-top: -1px;
+    font-family: "Inter-Black", Helvetica;
+    font-weight: 900;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .search .main {
+    flex-direction: column;
+    width: 1440px;
+    height: 754px;
+    gap: 10px;
+    padding: 30px 0px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .search .container-2 {
+    display: flex;
+    width: 1032px;
+    height: 724px;
+    align-items: flex-start;
+    padding: 0px 88px;
+    margin-bottom: -30px;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .search .title {
+    display: flex;
+    height: 80px;
+    align-items: flex-end;
+    width: 856px;
+    position: relative;
+  }
+  
+  .search .title-msg {
+    height: 50px;
+    font-family: "Inter-Black", Helvetica;
+    font-weight: 900;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+    width: 856px;
+    position: relative;
+  }
+  
+  .search .row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 856px;
+    height: 503px;
+    align-items: center;
+    gap: 60px 20px;
+    position: relative;
+  }
+  
+  .search .home-item {
+    position: relative;
+    width: 169px;
+    height: 215px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: #000000;
+  }
+  
+  .search .home-item-img {
+    height: 140px;
+    top: 0;
+    position: absolute;
+    width: 169px;
+    left: 0;
+  }
+  
+  .search .home-item-info {
+    display: flex;
+    flex-direction: column;
+    height: 67px;
+    align-items: flex-start;
+    padding: 0px 5px;
+    top: 148px;
+    position: absolute;
+    width: 169px;
+    left: 0;
+  }
+  
+  .search .name {
+    position: relative;
+    width: 121px;
+    height: 36px;
+    margin-top: -1px;
+    font-family: "Inter-Black", Helvetica;
+    font-weight: 900;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .search .price {
+    position: relative;
+    width: 127px;
+    height: 31px;
+    font-family: "Inter-Black", Helvetica;
+    font-weight: 900;
+    color: #000000;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .search .bottom {
+    display: flex;
+    flex-direction: column;
+    width: 856px;
+    height: 141px;
+    align-items: center;
+    padding: 30px 0px;
+    position: relative;
+  }
+  
+  .search .pagination {
+    display: inline-flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 8px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .search .page {
+    width: 32px;
+    background-color: #919eab;
+    border-radius: 4px;
+    opacity: 0.5;
+    position: relative;
+    height: 32px;
+  }
+  
+  .search .carat {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 4px;
+    left: 4px;
+  }
+  
+  .search .page-active-wrapper {
+    width: 32px;
+    position: relative;
+    height: 32px;
+  }
+  
+  .search .page-active {
+    background-color: #ffffff;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: #4200ff;
+    position: relative;
+    height: 32px;
+  }
+  
+  .search .num {
+    font-family: "SF Pro Text-Bold", Helvetica;
+    color: #4200ff;
+    position: absolute;
+    width: 24px;
+    top: 4px;
+    left: 4px;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+  }
+  
+  .search .page-2 {
+    width: 32px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: 1px solid;
+    border-color: #dfe3e8;
+    position: relative;
+    height: 32px;
+  }
+  
+  .search .num-2 {
+    font-family: "Inter-Bold", Helvetica;
+    color: var(--dark-grey-400);
+    position: absolute;
+    width: 24px;
+    top: 4px;
+    left: 4px;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+  }
+  
+  .search .footer {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 204px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: #f9f9f9;
+  }
+  
+  .search .row-wrapper {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 0 0 auto;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .search .row-2 {
+    display: flex;
+    width: 1032px;
+    align-items: flex-start;
+    gap: 376px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .search .col {
+    display: flex;
+    flex-direction: column;
+    width: 328px;
+    height: 150px;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+  }
+  
+  .search .row-3 {
+    position: relative;
+    width: 328px;
+    height: 150px;
+  }
+  
+  .search .logo-icon-2 {
+    position: absolute;
+    width: 124px;
+    height: 30px;
+    top: 120px;
+    left: 1px;
+  }
+  
+  .search .footer-text {
+    position: absolute;
+    width: 250px;
+    top: 74px;
+    left: 0;
+    font-family: "Inter-Black", Helvetica;
+    font-weight: 900;
+    color: #000000;
+    font-size: 10px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .search .git-hub {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: 105px;
+    left: 283px;
+  }
+  
+  .search .p {
+    position: absolute;
+    width: 297px;
+    top: 74px;
+    left: 31px;
+    font-family: "Inter-Black", Helvetica;
+    font-weight: 900;
+    color: #000000;
+    font-size: 10px;
+    text-align: right;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  

@@ -1,0 +1,439 @@
+.cart {
+    display: flex;
+    height: 1024px;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+    background-color: #ffffff;
+    width: 100%;
+    min-width: 1440px;
+  }
+  
+  .cart .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    align-items: center;
+    position: relative;
+  }
+  
+  .cart .header {
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    align-items: center;
+    padding: 0px 10px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    background-color: #8f8ff1;
+  }
+  
+  .cart .container {
+    display: flex;
+    width: 1032px;
+    height: 70px;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0px;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .cart .div {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    gap: 574px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    margin-bottom: -10px;
+  }
+  
+  .cart .logo-icon {
+    position: relative;
+    flex: 0 0 auto;
+    height: 60px;
+  }
+  
+  .cart .logo-text {
+    position: absolute;
+    width: 82px;
+    top: 15px;
+    left: 43px;
+    font-family: "Inter-Black", Helvetica;
+    font-weight: 900;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .cart .logo-img {
+    position: absolute;
+    width: 42px;
+    height: 29px;
+    top: -1px;
+    left: 0;
+    object-fit: cover;
+  }
+  
+  .cart .header-input {
+    position: absolute;
+    width: 503px;
+    height: 44px;
+    top: 3px;
+    left: 185px;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+  }
+  
+  .cart .search-icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 2px;
+    left: 22px;
+  }
+  
+  .cart .main-menu {
+    justify-content: center;
+    flex: 1;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .cart .menu-item {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 0px 10px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .cart .menu-item-txt {
+    width: 50px;
+    position: relative;
+    height: 20px;
+    margin-top: -1px;
+    font-family: "Inter-Black", Helvetica;
+    font-weight: 900;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .cart .text-wrapper {
+    width: 60px;
+    position: relative;
+    height: 20px;
+    margin-top: -1px;
+    font-family: "Inter-Black", Helvetica;
+    font-weight: 900;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .cart .main {
+    flex-direction: column;
+    width: 1440px;
+    height: 754px;
+    gap: 10px;
+    padding: 30px 0px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .cart .container-2 {
+    display: flex;
+    width: 1032px;
+    height: 724px;
+    align-items: flex-start;
+    padding: 0px 88px;
+    margin-bottom: -30px;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .cart .title {
+    display: flex;
+    height: 80px;
+    align-items: flex-end;
+    width: 856px;
+    position: relative;
+  }
+  
+  .cart .title-msg {
+    height: 50px;
+    font-family: "Inter-Black", Helvetica;
+    font-weight: 900;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+    width: 856px;
+    position: relative;
+  }
+  
+  .cart .row {
+    display: flex;
+    flex-direction: column;
+    width: 856px;
+    align-items: flex-start;
+    gap: 5px;
+    padding: 10px 18px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .cart .cart-col {
+    flex-direction: column;
+    width: 820px;
+    height: 390px;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    position: relative;
+  }
+  
+  .cart .cart-item {
+    width: 780px;
+    height: 140px;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    gap: 10px;
+    position: relative;
+  }
+  
+  .cart .check-box {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background-color: var(--lavender);
+  }
+  
+  .cart .cart-item-img {
+    position: relative;
+    width: 120px;
+    height: 120px;
+  }
+  
+  .cart .cart-item-info {
+    display: flex;
+    flex-direction: column;
+    width: 188px;
+    height: 120px;
+    align-items: flex-start;
+    gap: 9px;
+    padding: 10px;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .cart .cart-item-name {
+    position: relative;
+    width: 169px;
+    height: 26px;
+    margin-top: -1px;
+    margin-right: -1px;
+    font-family: "Inter-Black", Helvetica;
+    font-weight: 900;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .cart .text-wrapper-2 {
+    position: relative;
+    width: 169px;
+    height: 26px;
+    margin-right: -1px;
+    font-family: "Inter-Black", Helvetica;
+    font-weight: 900;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .cart .cart-item-totalprice {
+    display: flex;
+    width: 780px;
+    height: 50px;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .cart .order-check-item {
+    position: relative;
+    width: 760px;
+    height: 30px;
+    margin-top: -1px;
+    font-family: "Inter-Black", Helvetica;
+    font-weight: 900;
+    color: #000000;
+    font-size: 16px;
+    text-align: right;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .cart .cart-button {
+    width: 820px;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex: 0 0 auto;
+    display: flex;
+    gap: 10px;
+    position: relative;
+  }
+  
+  .cart .button-delete {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 160px;
+    height: 60px;
+  }
+  
+  .cart .text-wrapper-3 {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    font-family: var(--semi-bold-text-xl-20-font-family);
+    font-weight: var(--semi-bold-text-xl-20-font-weight);
+    color: #000000;
+    font-size: var(--semi-bold-text-xl-20-font-size);
+    text-align: center;
+    letter-spacing: var(--semi-bold-text-xl-20-letter-spacing);
+    line-height: var(--semi-bold-text-xl-20-line-height);
+    width: 160px;
+    height: 60px;
+    font-style: var(--semi-bold-text-xl-20-font-style);
+  }
+  
+  .cart .button-buy {
+    position: relative;
+    background-color: #8f8ff1;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 160px;
+    height: 60px;
+  }
+  
+  .cart .footer {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 204px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: #f9f9f9;
+  }
+  
+  .cart .row-wrapper {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 0 0 auto;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .cart .row-2 {
+    display: flex;
+    width: 1032px;
+    align-items: flex-start;
+    gap: 376px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .cart .col {
+    display: flex;
+    flex-direction: column;
+    width: 328px;
+    height: 150px;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+  }
+  
+  .cart .row-3 {
+    position: relative;
+    width: 328px;
+    height: 150px;
+  }
+  
+  .cart .logo-icon-2 {
+    position: absolute;
+    width: 124px;
+    height: 30px;
+    top: 120px;
+    left: 1px;
+  }
+  
+  .cart .footer-text {
+    position: absolute;
+    width: 250px;
+    top: 74px;
+    left: 0;
+    font-family: "Inter-Black", Helvetica;
+    font-weight: 900;
+    color: #000000;
+    font-size: 10px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .cart .git-hub {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: 105px;
+    left: 283px;
+  }
+  
+  .cart .p {
+    position: absolute;
+    width: 297px;
+    top: 74px;
+    left: 31px;
+    font-family: "Inter-Black", Helvetica;
+    font-weight: 900;
+    color: #000000;
+    font-size: 10px;
+    text-align: right;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  

@@ -1,0 +1,412 @@
+.order-check {
+    display: flex;
+    height: 1024px;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+    background-color: #ffffff;
+    width: 100%;
+    min-width: 1440px;
+  }
+  
+  .order-check .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    align-items: center;
+    position: relative;
+  }
+  
+  .order-check .header {
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    align-items: center;
+    padding: 0px 10px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    background-color: #8f8ff1;
+  }
+  
+  .order-check .container {
+    display: flex;
+    width: 1032px;
+    height: 70px;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0px;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .order-check .div {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    gap: 574px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    margin-bottom: -10px;
+  }
+  
+  .order-check .logo-icon {
+    position: relative;
+    flex: 0 0 auto;
+    height: 60px;
+  }
+  
+  .order-check .logo-text {
+    position: absolute;
+    width: 82px;
+    top: 15px;
+    left: 43px;
+    font-family: "Inter-Black", Helvetica;
+    font-weight: 900;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .order-check .logo-img {
+    position: absolute;
+    width: 42px;
+    height: 29px;
+    top: -1px;
+    left: 0;
+    object-fit: cover;
+  }
+  
+  .order-check .header-input {
+    position: absolute;
+    width: 503px;
+    height: 44px;
+    top: 3px;
+    left: 185px;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+  }
+  
+  .order-check .search-icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 2px;
+    left: 22px;
+  }
+  
+  .order-check .main-menu {
+    justify-content: center;
+    flex: 1;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .order-check .menu-item {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 0px 10px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .order-check .menu-item-txt {
+    width: 50px;
+    position: relative;
+    height: 20px;
+    margin-top: -1px;
+    font-family: "Inter-Black", Helvetica;
+    font-weight: 900;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .order-check .text-wrapper {
+    width: 60px;
+    position: relative;
+    height: 20px;
+    margin-top: -1px;
+    font-family: "Inter-Black", Helvetica;
+    font-weight: 900;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .order-check .main {
+    flex-direction: column;
+    width: 1440px;
+    height: 754px;
+    gap: 10px;
+    padding: 30px 0px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .order-check .container-2 {
+    display: flex;
+    width: 1032px;
+    height: 724px;
+    align-items: flex-start;
+    padding: 0px 88px;
+    margin-bottom: -30px;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .order-check .title {
+    display: flex;
+    height: 80px;
+    align-items: flex-end;
+    width: 856px;
+    position: relative;
+  }
+  
+  .order-check .title-msg {
+    height: 50px;
+    font-family: "Inter-Black", Helvetica;
+    font-weight: 900;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+    width: 856px;
+    position: relative;
+  }
+  
+  .order-check .row {
+    display: flex;
+    flex-direction: column;
+    width: 856px;
+    align-items: flex-start;
+    gap: 5px;
+    padding: 10px 18px;
+    position: relative;
+    flex: 0 0 auto;
+    margin-bottom: -11px;
+  }
+  
+  .order-check .order-check-col {
+    flex-direction: column;
+    width: 820px;
+    height: 390px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+    border-radius: 10px;
+  }
+  
+  .order-check .order-check-item {
+    width: 780px;
+    height: 140px;
+    padding: 10px;
+    background-color: #ffffff;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+    border-radius: 10px;
+  }
+  
+  .order-check .order-check-item-img {
+    position: relative;
+    width: 120px;
+    height: 120px;
+  }
+  
+  .order-check .order-check-item-2 {
+    display: flex;
+    flex-direction: column;
+    width: 188px;
+    height: 120px;
+    align-items: flex-start;
+    gap: 9px;
+    padding: 10px;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .order-check .item-order-item-name {
+    position: relative;
+    width: 169px;
+    height: 26px;
+    margin-top: -1px;
+    margin-right: -1px;
+    font-family: "Inter-Black", Helvetica;
+    font-weight: 900;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .order-check .item-order-item {
+    position: relative;
+    width: 169px;
+    height: 26px;
+    margin-right: -1px;
+    font-family: "Inter-Black", Helvetica;
+    font-weight: 900;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .order-check .order-check-item-img-2 {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    background-image: url(../assets/images/order-check-item-img.png);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .order-check .order-check-item-wrapper {
+    display: flex;
+    width: 780px;
+    height: 50px;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .order-check .order-check-item-3 {
+    position: relative;
+    width: 760px;
+    height: 30px;
+    margin-top: -1px;
+    font-family: "Inter-Black", Helvetica;
+    font-weight: 900;
+    color: #000000;
+    font-size: 16px;
+    text-align: right;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .order-check .order-check-col-2 {
+    display: flex;
+    flex-direction: column;
+    width: 820px;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 20px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+  }
+  
+  .order-check .footer {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 204px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: #f9f9f9;
+  }
+  
+  .order-check .row-wrapper {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 0 0 auto;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .order-check .row-2 {
+    display: flex;
+    width: 1032px;
+    align-items: flex-start;
+    gap: 376px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .order-check .col {
+    display: flex;
+    flex-direction: column;
+    width: 328px;
+    height: 150px;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+  }
+  
+  .order-check .row-3 {
+    position: relative;
+    width: 328px;
+    height: 150px;
+  }
+  
+  .order-check .logo-icon-2 {
+    position: absolute;
+    width: 124px;
+    height: 30px;
+    top: 120px;
+    left: 1px;
+  }
+  
+  .order-check .footer-text {
+    position: absolute;
+    width: 250px;
+    top: 74px;
+    left: 0;
+    font-family: "Inter-Black", Helvetica;
+    font-weight: 900;
+    color: #000000;
+    font-size: 10px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .order-check .git-hub {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: 105px;
+    left: 283px;
+  }
+  
+  .order-check .p {
+    position: absolute;
+    width: 297px;
+    top: 74px;
+    left: 31px;
+    font-family: "Inter-Black", Helvetica;
+    font-weight: 900;
+    color: #000000;
+    font-size: 10px;
+    text-align: right;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  

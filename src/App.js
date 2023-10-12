@@ -15,23 +15,17 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* <Route> */}
-          <Route path='/' element={<Home />} />
-          <Route path='/search-result' element={<Search />} />
-          <Route path='/item-detail' element={<ItemDetail />} />
-          <Route path='/order' element={<Order />} />
-          <Route path='/order-check' element={<OrderCheck />} />
-          <Route path='/login' element={<Login />} />
-          <Route path='/cart' element={<Cart />} />
-          <Route path='/admin-join' element={<AdminJoin />} />
-          <Route path='/admin-login' element={<AdminLogin />} />
-          <Route path='/admin-user-manage' element={<AdminUserManage />} />
-          <Route path='/admin-item-manage' element={<AdminItemManage />} />
-          {/* <Route path='/item-detail' element={<ItemDetail />}/>
-          <Route path='/search-result' element={<SearchResult />}/>
-          <Route path='/order-check' element={<OrderCheck />}/>
-          <Route path='/order' element={<Order />}/>      */}
-        {/* </Route> */}
+        <Route path='/' element={<Home />} />
+        <Route path='/search-result' element={<Search />} />
+        <Route path='/item-detail' element={<ItemDetail />} />
+        <Route path='/order' element={<Order />} />
+        <Route path='/order-check' element={<OrderCheck />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/cart' element={<Cart />} />
+        <Route path='/admin-join' element={<AdminJoin />} />
+        <Route path='/admin-login' element={<AdminLogin />} />
+        <Route path='/admin-user-manage' element={<AdminUserManage />} />
+        <Route path='/admin-item-manage' element={<AdminItemManage />} />
       </Routes>
     </BrowserRouter>
 

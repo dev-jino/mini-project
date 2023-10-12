@@ -18,14 +18,3 @@ code {
   box-sizing: border-box;
   list-style-type: none;
 }
-
-#root {
-  display: flex;
-  height: 1024px;
-  align-items: flex-start;
-  gap: 10px;
-  position: relative;
-  background-color: #ffffff;
-  width: 100%;
-  min-width: 1440px;
-}

@@ -43,26 +43,26 @@ function Home() {
                                     <div class="price">120,000원</div>
                                 </div>
                             </div>
-                            <div class="home-item-2">
-                                <div class="home-item-img-2"></div>
-                                <div class="home-item-info-2">
+                            <div class="home-item">
+                                <div class="home-item-img"></div>
+                                <div class="home-item-info">
                                     <div class="name-2">나이키 2</div>
                                     <div class="price-2">210,000원</div>
                                 </div>
                             </div>
-                            <div class="home-item-3">
+                            <div class="home-item">
+                                <div class="home-item-img"></div>
                                 <div class="home-item-info">
                                     <div class="name">나이키 3</div>
                                     <div class="price">140,000원</div>
                                 </div>
-                                <div class="home-item-img-3"></div>
                             </div>
-                            <div class="home-item-3">
+                            <div class="home-item">
+                                <div class="home-item-img"></div>
                                 <div class="home-item-info">
                                     <div class="name">나이키 4</div>
                                     <div class="price">90,000원</div>
                                 </div>
-                                <div class="home-item-img-4"></div>
                             </div>
                         </div>
                     </div>

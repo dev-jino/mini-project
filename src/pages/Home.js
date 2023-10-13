@@ -2,8 +2,13 @@ import "./Home.css";
 import logo from "../assets/images/logo-img.png";
 import github_logo from "../assets/images/github-icon.png";
 import search_logo from "../assets/images/search-icon.png";
+import { useState } from "react";
 
 function Home() {
+    const [text, setText] = useState("");
+    const onChange = (e) => {
+        setText(e.target.value);
+    }
     return (
         <div class="home">
             <div class="wrapper">
@@ -26,7 +31,9 @@ function Home() {
                                 <div class="home-search-text">원하는 상품을 검색해보세요</div>
                                 <div class="home-search-input">
                                     <img class="home-search-img" src={search_logo} alt="검색" />
-                                    <input class="home-search-inputbox" />
+                                    <form action='/search-result'>
+                                        <input class="home-search-inputbox" name="search-item" type="text" onChange={onChange} value={text}/>
+                                    </form>
                                 </div>
                             </div>
                         </div>

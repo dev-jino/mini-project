@@ -3,12 +3,13 @@ import logo from "../assets/images/logo-img.png";
 import github_logo from "../assets/images/github-icon.png";
 import search_logo from "../assets/images/search-icon.png";
 import item from "../assets/images/order-check-item-img.png";
+import Header from "../components/Header";
 
 function OrderCheck() {
     return (
         <div class="order-check">
       <div class="wrapper">
-        <div class="header">
+        {/* <div class="header">
           <div class="container">
             <div class="div">
               <div class="logo-icon">
@@ -24,7 +25,8 @@ function OrderCheck() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
+        <Header />
         <div class="main">
           <div class="container-2">
             <div class="title"><div class="title-msg">주문조회</div></div>

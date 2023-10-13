@@ -1,0 +1,47 @@
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+function GetItems() {
+    const params = useParams();
+    const [data, setData] = useState([]);   
+
+    useEffect(() => {
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET", `/v1/search/shop.json?display=10&query=${params.item}`);
+
+        xhr.setRequestHeader("content-type", "application-json; charset=utf-8;");
+        xhr.setRequestHeader("X-Naver-Client-Id", "ij42xVuylxyoqS_Zkf7J");
+        xhr.setRequestHeader("X-Naver-Client-Secret", "a0m3NANuT2");
+        xhr.send();
+
+        xhr.onload = () => {
+            if (xhr.status === 200) {
+                const res = JSON.parse(xhr.response);
+                // setData(res.items);
+                setData(res.items.sort((a, b) => a.lprice - b.lprice));
+            } else {
+                console.log(xhr.status, xhr.statusText);
+            }
+            
+        }
+    }, [])
+
+    return (
+        <>
+            
+            {data.map((value, index) => {
+                return (
+                    <>
+                        <div className="item-detail-lowprice-3">
+                            <img className="item-detail-lowprice-4" src={value.image}></img>
+                            <div className="item-detail-lowprice-5">
+                                <div className="item-detail-name-wrapper"><div className="item-detail-name-2" dangerouslySetInnerHTML={{__html: value.title}}></div></div>
+                                <div className="item-detail-price-wrapper"><div className="item-detail-price-2">{value.lprice}원</div></div>
+                            </div>
+                        </div>
+                    </>
+                )
+            })}
+        </>
+    )
+}
+export default GetItems;

@@ -197,13 +197,13 @@
 .home .home-items-section {
     display: flex;
     flex-direction: column;
-    /* width: 1440px; */
     width: 100%;
     height: 424px;
     align-items: center;
     gap: 10px;
     padding: 30px 0px;
     position: relative;
+    flex: 1;
 }
 
 .home .div {
@@ -244,6 +244,7 @@
     gap: 60px;
     position: relative;
     flex: 0 0 auto;
+    flex-wrap: wrap;
 }
 
 .home .home-item {
@@ -262,7 +263,6 @@
     height: 140px;
     top: 0;
     left: 0;
-    background-image: url("../assets/images/home_item_img.png");
     background-size: cover;
 }
 
@@ -591,4 +591,14 @@
         width: 748px;
         gap: 92px;
     }
+  }
+  a {
+    text-decoration: none;
+  }
+  a:link {
+    color:white;
+  }
+
+  a:visited {
+    color: black;
   }

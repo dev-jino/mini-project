@@ -1,21 +1,4 @@
-.search {
-    display: flex;
-    height: 1024px;
-    align-items: flex-start;
-    gap: 10px;
-    position: relative;
-    background-color: #ffffff;
-    width: 100%;
-    min-width: 1440px;
-  }
-  
-  .search .wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 1440px;
-    align-items: center;
-    position: relative;
-  }
+
   
   .search .header {
     display: flex;
@@ -431,4 +414,3 @@
     letter-spacing: 0;
     line-height: normal;
   }
-  

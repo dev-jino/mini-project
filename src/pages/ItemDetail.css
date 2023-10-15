@@ -12,7 +12,7 @@
   .item-detail .wrapper {
     display: flex;
     flex-direction: column;
-    width: 1440px;
+    width: 100%;
     align-items: center;
     position: relative;
   }
@@ -154,6 +154,7 @@
     display: flex;
     align-items: center;
     position: relative;
+    flex: 1 1;
   }
   
   .item-detail .container-2 {
@@ -165,6 +166,8 @@
     margin-bottom: -30px;
     flex-direction: column;
     position: relative;
+    flex: 1 1;
+
   }
   
   .item-detail .title {
@@ -393,6 +396,8 @@
     height: 294px;
     align-items: center;
     position: relative;
+    flex: 1 1;
+
   }
   
   .item-detail .item-detail-hr-2 {
@@ -411,6 +416,7 @@
     gap: 10px;
     padding: 20px 10px;
     position: relative;
+    flex: 1 1;
   }
   
   .item-detail .item-detail-lowprice-2 {

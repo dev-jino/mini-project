@@ -6,11 +6,14 @@ function GetItems() {
 
     useEffect(() => {
         const xhr = new XMLHttpRequest();
+        const X_NAVER_CLIENT_ID = `${process.env.REACT_APP_X_NAVER_CLIENT_ID}`;
+        const X_NAVER_CLIENT_SECRET = `${process.env.REACT_APP_X_NAVER_CLIENT_SECRET}`;
         xhr.open("GET", `/v1/search/shop.json?display=10&query=${params.item}`);
 
         xhr.setRequestHeader("content-type", "application-json; charset=utf-8;");
-        xhr.setRequestHeader("X-Naver-Client-Id", "ij42xVuylxyoqS_Zkf7J");
-        xhr.setRequestHeader("X-Naver-Client-Secret", "a0m3NANuT2");
+        xhr.setRequestHeader("X-Naver-Client-Id", X_NAVER_CLIENT_ID);
+        xhr.setRequestHeader("X-Naver-Client-Secret", X_NAVER_CLIENT_SECRET);
+        
         xhr.send();
 
         xhr.onload = () => {

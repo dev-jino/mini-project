@@ -81,7 +81,7 @@
     display: flex;
     width: 334px;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     position: relative;
 }
 
@@ -124,11 +124,12 @@
 }
 
 .home .cta {
-    position: absolute;
-    width: 1032px;
+    /* position: absolute; */
+    position: relative;
+    /* width: 1032px; */
     height: 320px;
-    top: 70px;
-    left: 0;
+    /* top: 70px; */
+    /* left: 0; */
 }
 
 .home .home-search {

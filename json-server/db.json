@@ -1,103 +1,127 @@
 {
-    "items": [
-        {
-            "idx": 0,
-            "category": "",
-            "name": "테스트1",
-            "price": 11111,
-            "img": "/static/media/home_item_img.f4b6268d2ca26c746d15.png",
-            "quantity": 1,
-            "reg_date": ""
-        },
-        {
-            "idx": 1,
-            "category": "",
-            "name": "테스트2",
-            "price": 11111,
-            "img": "/static/media/home_item_img.f4b6268d2ca26c746d15.png",
-            "quantity": 1,
-            "reg_date": ""
-        },
-        {
-            "idx": 2,
-            "category": "",
-            "name": "테스트3",
-            "price": 11111,
-            "img": "/static/media/home_item_img.f4b6268d2ca26c746d15.png",
-            "quantity": 1,
-            "reg_date": ""
-        },
-        {
-            "idx": 3,
-            "category": "",
-            "name": "테스트4",
-            "price": 11111,
-            "img": "/static/media/home_item_img.f4b6268d2ca26c746d15.png",
-            "quantity": 1,
-            "reg_date": ""
-        },
-        {
-            "idx": 4,
-            "category": "",
-            "name": "테스트5",
-            "price": 11111,
-            "img": "/static/media/home_item_img.f4b6268d2ca26c746d15.png",
-            "quantity": 1,
-            "reg_date": ""
-        },
-        {
-            "idx": 5,
-            "category": "",
-            "name": "테스트6",
-            "price": 11111,
-            "img": "/static/media/home_item_img.f4b6268d2ca26c746d15.png",
-            "quantity": 1,
-            "reg_date": ""
-        },
-        {
-            "idx": 6,
-            "category": "",
-            "name": "테스트7",
-            "price": 11111,
-            "img": "/static/media/home_item_img.f4b6268d2ca26c746d15.png",
-            "quantity": 1,
-            "reg_date": ""
-        },
-        {
-            "idx": 7,
-            "category": "",
-            "name": "테스트8",
-            "price": 11111,
-            "img": "/static/media/home_item_img.f4b6268d2ca26c746d15.png",
-            "quantity": 1,
-            "reg_date": ""
-        },
-        {
-            "idx": 8,
-            "category": "",
-            "name": "나이키",
-            "price": 11111,
-            "img": "/static/media/home_item_img.f4b6268d2ca26c746d15.png",
-            "quantity": 1,
-            "reg_date": ""
-        },
-        {
-            "idx": 9,
-            "category": "",
-            "name": "나이키2",
-            "price": 11111,
-            "img": "/static/media/home_item_img.f4b6268d2ca26c746d15.png",
-            "quantity": 1,
-            "reg_date": ""
-        },
-        {
-            "idx": 10,
-            "category": "",
-            "name": "아디다스",
-            "price": 11111,
-            "img": "/static/media/home_item_img.f4b6268d2ca26c746d15.png",
-            "quantity": 1,
-            "reg_date": ""
-        }
-    ]
+  "user": [
+    {
+      "id": 1,
+      "userid": "30677925271",
+      "nickname": "ㅁㄴㅇㄹ",
+      "email": "ㄴㅁㅇㄹ",
+      "phone": "ㄴㅁㅇㄹ",
+      "address1": "ㄴㅁㅇㄹ",
+      "address2": "ㄴㅁㅇㄹ",
+      "address3": "ㄴㅁㅇㄹ",
+      "status": 1
+    },
+    {
+      "id": 2,
+      "userid": "3067792527",
+      "nickname": "홍길동",
+      "email": "test@test.com",
+      "phone": "010-1111-1111",
+      "address1": "63309",
+      "address2": "제주특별자치도 제주시 첨단로 242(영평동)",
+      "address3": "1001호",
+      "status": 1
+    }
+  ],
+  "items": [
+    {
+      "idx": 0,
+      "category": "",
+      "name": "테스트1",
+      "price": 11111,
+      "img": "/static/media/home_item_img.f4b6268d2ca26c746d15.png",
+      "quantity": 1,
+      "reg_date": ""
+    },
+    {
+      "idx": 1,
+      "category": "",
+      "name": "테스트2",
+      "price": 11111,
+      "img": "/static/media/home_item_img.f4b6268d2ca26c746d15.png",
+      "quantity": 1,
+      "reg_date": ""
+    },
+    {
+      "idx": 2,
+      "category": "",
+      "name": "테스트3",
+      "price": 11111,
+      "img": "/static/media/home_item_img.f4b6268d2ca26c746d15.png",
+      "quantity": 1,
+      "reg_date": ""
+    },
+    {
+      "idx": 3,
+      "category": "",
+      "name": "테스트4",
+      "price": 11111,
+      "img": "/static/media/home_item_img.f4b6268d2ca26c746d15.png",
+      "quantity": 1,
+      "reg_date": ""
+    },
+    {
+      "idx": 4,
+      "category": "",
+      "name": "테스트5",
+      "price": 11111,
+      "img": "/static/media/home_item_img.f4b6268d2ca26c746d15.png",
+      "quantity": 1,
+      "reg_date": ""
+    },
+    {
+      "idx": 5,
+      "category": "",
+      "name": "테스트6",
+      "price": 11111,
+      "img": "/static/media/home_item_img.f4b6268d2ca26c746d15.png",
+      "quantity": 1,
+      "reg_date": ""
+    },
+    {
+      "idx": 6,
+      "category": "",
+      "name": "테스트7",
+      "price": 11111,
+      "img": "/static/media/home_item_img.f4b6268d2ca26c746d15.png",
+      "quantity": 1,
+      "reg_date": ""
+    },
+    {
+      "idx": 7,
+      "category": "",
+      "name": "테스트8",
+      "price": 11111,
+      "img": "/static/media/home_item_img.f4b6268d2ca26c746d15.png",
+      "quantity": 1,
+      "reg_date": ""
+    },
+    {
+      "idx": 8,
+      "category": "",
+      "name": "나이키",
+      "price": 11111,
+      "img": "/static/media/home_item_img.f4b6268d2ca26c746d15.png",
+      "quantity": 1,
+      "reg_date": ""
+    },
+    {
+      "idx": 9,
+      "category": "",
+      "name": "나이키2",
+      "price": 11111,
+      "img": "/static/media/home_item_img.f4b6268d2ca26c746d15.png",
+      "quantity": 1,
+      "reg_date": ""
+    },
+    {
+      "idx": 10,
+      "category": "",
+      "name": "아디다스",
+      "price": 11111,
+      "img": "/static/media/home_item_img.f4b6268d2ca26c746d15.png",
+      "quantity": 1,
+      "reg_date": ""
+    }
+  ]
 }

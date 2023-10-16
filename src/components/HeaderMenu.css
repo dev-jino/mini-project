@@ -1,0 +1,32 @@
+.main_menu {
+    justify-content: flex-end;
+    flex: 1;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+.menu_item {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 0px 10px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+.menu_item_txt {
+    width: 50px;
+    position: relative;
+    height: 20px;
+    margin-top: -1px;
+    font-family: "Inter-Black", Helvetica;
+    font-weight: 900;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }

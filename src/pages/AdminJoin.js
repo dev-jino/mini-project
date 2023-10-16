@@ -8,7 +8,7 @@ function AdminJoin() {
     return (
         <div class="admin-join">
             <div class="wrapper">
-                <Header />
+                {/* <Header /> */}
                 <div class="main">
                     <div class="container-2">
                         <div class="title"><div class="title-msg">관리자 회원가입</div></div>
@@ -60,7 +60,7 @@ function AdminJoin() {
                         </div>
                     </div>
                 </div>
-                <Footer />
+                {/* <Footer /> */}
             </div>
         </div>
     )

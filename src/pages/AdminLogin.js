@@ -8,7 +8,7 @@ function AdminLogin() {
     return ( 
         <div class="admin-login">
       <div class="wrapper">
-        <Header />
+        {/* <Header /> */}
         
         <div class="main">
           <div class="container-2">
@@ -30,7 +30,7 @@ function AdminLogin() {
             </div>
           </div>
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </div>
     )

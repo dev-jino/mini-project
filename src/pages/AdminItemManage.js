@@ -8,7 +8,7 @@ function AdminItemManage() {
     return (
         <div class="admin-item-manage">
       <div class="wrapper">
-        <Header />
+        {/* <Header /> */}
         <div class="main">
           <div class="container-2">
             <div class="title"><div class="title-msg">관리자 상품관리</div></div>
@@ -28,7 +28,7 @@ function AdminItemManage() {
             </div>
           </div>
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </div>
     )

@@ -36,7 +36,7 @@ function Search() {
   return (
     <div className="search">
       <div className="wrapper">
-        <Header />
+        {/* <Header /> */}
         <div className="main">
           <div className="container-2">
             <div className="title"><div className="title-msg">{item}에 대한 검색 결과</div></div>
@@ -71,7 +71,7 @@ function Search() {
             </div>
           </div>
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </div>
   )

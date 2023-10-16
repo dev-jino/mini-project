@@ -10,7 +10,7 @@ function OrderCheck() {
   return (
     <div class="order-check">
       <div class="wrapper">
-        <Header />
+        {/* <Header /> */}
         <div class="main">
           <div class="container-2">
             <div class="title"><div class="title-msg">주문조회</div></div>
@@ -48,7 +48,7 @@ function OrderCheck() {
             </div>
           </div>
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </div>
   )

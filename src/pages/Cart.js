@@ -9,7 +9,7 @@ function Cart() {
     return (
         <div class="cart">
       <div class="wrapper">
-        <Header />
+        {/* <Header /> */}
         <div class="main">
           <div class="container-2">
             <div class="title"><div class="title-msg">장바구니</div></div>
@@ -42,7 +42,7 @@ function Cart() {
             </div>
           </div>
         </div>
-        <Footer />
+        {/* <Footer /> */}
   
       </div>
     </div>

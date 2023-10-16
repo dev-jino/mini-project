@@ -9,7 +9,7 @@ function Join() {
     return (
         <div class="join">
             <div class="wrapper">
-                <Header />
+                {/* <Header /> */}
                 <div class="main">
                     <div class="container-2">
                         <div class="title"><div class="title-msg">회원가입</div></div>
@@ -48,7 +48,7 @@ function Join() {
                         </div>
                     </div>
                 </div>
-                <Footer />
+                {/* <Footer /> */}
             </div>
         </div>
     )

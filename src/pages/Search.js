@@ -7,10 +7,20 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import prev from "../assets/images/prev.png"
+import next from "../assets/images/next.png"
+import Pagination from "react-js-pagination";
 
 function Search() {
+
   const [item, setItem] = useState("");
   const [itemLists, setItemLists] = useState([]);
+  const [page, setPage] = useState(1);
+  const [currentPost, setCurrentPost] = useState(itemLists);
+
+  const postPerPage = 8;
+  const indexOfLastPost = page * postPerPage;
+  const indexOfFirstPost = indexOfLastPost - postPerPage;
   useEffect(() => {
     const query = window.location.search;
     const param = new URLSearchParams(query);
@@ -23,26 +33,35 @@ function Search() {
     xhr.onload = () => {
       if (xhr.status === 200) {
         const items = JSON.parse(xhr.response);
-
         setItemLists(items);
       }
     }
   }, [])
 
+  const handlePageChange = (page) => {
+    setPage(page);
+  }
   const filtered = itemLists.filter((itemList) => {
     return itemList.name.includes(item);
   })
+  useEffect(() => {
+
+    setCurrentPost(filtered.slice((page - 1) * postPerPage, page * postPerPage))
+
+
+
+  }, [itemLists, page])
+
+
 
   return (
     <div className="search">
       <div className="wrapper">
-        {/* <Header /> */}
         <div className="main">
           <div className="container-2">
             <div className="title"><div className="title-msg">{item}에 대한 검색 결과</div></div>
             <div className="row">
-              {filtered.map((f_item, index) => {
-                console.log(f_item);
+              {currentPost.map((f_item, index) => {
                 return (
                   <ul key={index} className="home-item">
                     <li key={index}>
@@ -57,21 +76,22 @@ function Search() {
               })}
             </div>
             <div className="bottom">
-              <div className="pagination">
-                <div className="page"><img className="carat" src="img/carat-2.svg" /></div>
-                <div className="page-active-wrapper">
-                  <div className="page-active"><div className="num">1</div></div>
-                </div>
-                <div className="page-2"><div className="num-2">2</div></div>
-                <div className="page-2"><div className="num-2">3</div></div>
-                <div className="page-2"><div className="num-2">4</div></div>
-                <div className="page-2"><div className="num-2">5</div></div>
-                <div className="page-2"><img className="carat" src="img/carat.svg" /></div>
-              </div>
+              {/*activePage: 현재 페이지, itemsCountPerPage: 한 페이지당 보여줄 리스트 아이템의 개수,
+                totalItemsCount: 총 아이템 개수, pageRangeDisplayed: Paginator 내에서 보여줄 페이지의 범위,
+                prevPageText: "이전"을 나타낼 텍스트, nextPageText: "다음"을 나타낼 텍스트,
+                onChange: 페이지가 바뀔 때 핸들링 할 함수 */}
+              <Pagination
+                activePage={page}
+                itemsCountPerPage={postPerPage}
+                totalItemsCount={filtered.length}
+                pageRangeDisplayed={5}
+                prevPageText={"<"}
+                nextPageText={">"}
+                onChange={handlePageChange}
+              />
             </div>
           </div>
         </div>
-        {/* <Footer /> */}
       </div>
     </div>
   )

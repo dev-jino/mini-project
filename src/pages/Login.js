@@ -25,7 +25,7 @@ function Login() {
   return (
     <div class="login">
       <div class="wrapper">
-        <Header />
+        {/* <Header /> */}
         <div class="main">
           <div class="container-2">
             <div class="title"><div class="title-msg">로그인</div></div>
@@ -54,7 +54,7 @@ function Login() {
             </button>
           </div>
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </div>
   )

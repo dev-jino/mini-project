@@ -5,6 +5,8 @@ import search_logo from "../assets/images/search-icon.png";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
+import HeaderMenu from "../components/HeaderMenu";
+
 function Home() {
     const [text, setText] = useState("");
     const onChange = (e) => {
@@ -35,12 +37,7 @@ function Home() {
                                 <Link to='/'><div class="logo-text">HowMuch</div>
                                 <img class="logo-img" src={logo} alt="로고" /></Link>
                             </div>
-                            <div class="main-menu">
-                                <div class="menu-item"><div class="menu-item-txt"><Link to='/cart'>장바구니</Link></div></div>
-                                <div class="menu-item"><div class="menu-item-txt"><Link to='order-check'>주문조회</Link></div></div>
-                                <div class="menu-item"><div class="text-wrapper"><Link to='mypage'>마이페이지</Link></div></div>
-                                <div class="menu-item"><div class="menu-item-txt"><Link to='logout'>로그아웃</Link></div></div>
-                            </div>
+                            <HeaderMenu />
                         </div>
                         <div class="cta">
                             <div class="home-search">
@@ -77,27 +74,6 @@ function Home() {
                     </div>
                 </div>
                 <Footer />
-                {/* <footer class="footer">
-                    <div class="row-wrapper">
-                        <div class="row-2">
-                            <div class="col">
-                                <div class="row-3">
-                                    <div class="logo-icon-2">
-                                        <div class="logo-text">HowMuch</div>
-                                        <img class="logo-img" src={logo} alt="로고" />
-                                    </div>
-                                    <p class="footer-text">현재 웹 사이트는 Mini-Project의 일환으로 실제로 물건을 판매하지 않습니다.</p>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="row-3">
-                                    <img class="git-hub" src={github_logo} />
-                                    <p class="p">현재 웹사이트의 소스 코드는 하단의 Git Hub에서 확인하실 수 있습니다.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </footer> */}
             </div>
         </div>
     )

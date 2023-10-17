@@ -15,7 +15,8 @@ import KakaoLogin from "./pages/KakaoLogin";
 import Join from "./pages/Join";
 import Layout from "./components/Layout";
 import { IsLoginProvider } from "./contexts/IsLoginContext";
-
+import PayReady from "./components/PayReady";
+import PayResult from "./components/PayResult";
 function App() {
   return (
     <IsLoginProvider>
@@ -41,6 +42,8 @@ function App() {
             <Route path='/admin-user-manage' element={<AdminUserManage />} />
             <Route path='/admin-item-manage' element={<AdminItemManage />} />
             <Route path="/kakao-login" element={<KakaoLogin />} />
+            <Route path='/payready' element={<PayReady />} />
+            <Route path='/payresult' element={<PayResult />} />
           </Route>
         </Routes>
       </BrowserRouter>

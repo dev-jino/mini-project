@@ -56,16 +56,25 @@ function Home() {
                     <div class="div">
                         <div class="title"><div class="title-msg">이런 상품 어때요?</div></div>
                         <div class="row">
-                            {itemLists.map((item, index) => {
-                                console.log(item);
+                            {itemLists.sort(() => Math.random() - 0.5).slice(0, 4).map((item, index) => {
+                                console.log(itemLists, item);
                                 return (
                                     <ul key={index} className="home-item">
                                         <li key={index}>
-                                            <Link to={`/item-detail/${item.name}`}><img className="home-item-img" src={item.img}></img></Link>
+                                            <Link to={`/item-detail/${item.name}`} onClick={() => {
+                                                window.sessionStorage.setItem("name", item.name)
+                                                window.sessionStorage.setItem("price", item.price)
+                                                window.sessionStorage.setItem("quantity", 1)}}><img className="home-item-img" src={item.img}></img></Link>
                                             <div className="home-item-info">
-                                                <Link to={`/item-detail/${item.name}`}><div className="name">{item.name}</div></Link>
-                                                <Link to={`/item-detail/${item.name}`}><div className="price">{item.price}</div></Link>
-                                            </div>
+                                                <Link to={`/item-detail/${item.name}`} onClick={() => {
+                                                window.sessionStorage.setItem("name", item.name)
+                                                window.sessionStorage.setItem("price", item.price)
+                                                window.sessionStorage.setItem("quantity", item.quantity)}}><div className="name">{item.name}</div></Link>
+                                                <Link to={`/item-detail/${item.name}`} onClick={() => {
+                                                window.sessionStorage.setItem("name", item.name)
+                                                window.sessionStorage.setItem("price", item.price)
+                                                window.sessionStorage.setItem("quantity", 1)}}><div className="price">{item.price}</div></Link>
+                                            </div>  
                                         </li>
                                     </ul>
                                 )

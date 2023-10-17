@@ -1,7 +1,7 @@
 import "./Order.css";
 import Post from "../components/Post";
 import { useState, useEffect } from "react";
-
+import { Link } from "react-router-dom";
 function Order() {
   const [addressObj, setAddressObj] = useState({
     zonecode : '',
@@ -128,7 +128,7 @@ function Order() {
                 </ul>
                 <div class="item-order-item-name-wrapper">
                   <div class="item-order-item-name-2">
-                    합계 금액 : {totalPrice}원
+                    합계 금액 : {calculateTotalPrice()}원
                   </div>
                 </div>
               </div>
@@ -179,7 +179,7 @@ function Order() {
                 <div class="item-detail-hr"></div>
                 <div class="item-detail-button">
                   <div class="button-buy-text-wrapper">
-                    <div class="button-buy-text-2" onClick={handleOrder}>주문하기</div>
+                    <Link to='/payready'><div class="button-buy-text-2" onClick={handleOrder}>주문하기</div></Link>
                   </div>
                 </div>
               </div>

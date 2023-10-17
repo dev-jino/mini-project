@@ -113,14 +113,31 @@
       "status": 1
     }
   ],
-  "cart": [
+  "cart": [],
+  "cartItem": [],
+  "order": [],
+  "order_item": [
     {
-
-    }
-  ],
-  "cartItem": [
+      "category": "",
+      "idx": 6,
+      "img": "/static/media/home_item_img.f4b6268d2ca26c746d15.png",
+      "name": "테스트7",
+      "price": 11111,
+      "quantity": 1,
+      "reg_date": "",
+      "userid": "3085794922",
+      "id": 1
+    },
     {
-        
+      "category": "",
+      "idx": 6,
+      "img": "/static/media/home_item_img.f4b6268d2ca26c746d15.png",
+      "name": "테스트7",
+      "price": 11111,
+      "quantity": 1,
+      "reg_date": "",
+      "userid": "3085794922",
+      "id": 2
     }
   ]
 }

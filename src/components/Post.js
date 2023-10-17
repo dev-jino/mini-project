@@ -32,7 +32,7 @@ const Post = (props) => {
       }
     
     return (
-        <button className="button-find-zipcode" type="button" onClick={handleClick}>주소찾기</button>
+        <button className="button-find-zipcode button-buy" type="button" onClick={handleClick}>주소찾기</button>
     );
 };
 

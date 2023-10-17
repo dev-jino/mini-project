@@ -109,8 +109,8 @@ function ItemDetail() {
   const handleBuy = () => {
     if (!JSON.parse(sessionStorage.getItem("userData"))) {
       if (window.confirm("로그인이 필요합니다.\n로그인 페이지로 이동하시겠습니까?")) {
-        // navigate('/login');
-        alert('홈으로');
+        navigate('/login');
+        // alert('홈으로');
       }
     } else {
       const userIdInput = JSON.parse(sessionStorage.getItem("userData"))[0].userid;

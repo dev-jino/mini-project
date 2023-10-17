@@ -1,67 +1,195 @@
 import "./Order.css";
-import logo from "../assets/images/logo-img.png";
-import github_logo from "../assets/images/github-icon.png";
-import search_logo from "../assets/images/search-icon.png";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Post from "../components/Post";
+import { useState, useEffect } from "react";
+
 function Order() {
-    return (
-        <div class="order">
+  const [addressObj, setAddressObj] = useState({
+    zonecode : '',
+    fullAddress : ''
+  });
+  const [orderItemLists, setOrderItemLists] = useState([]);
+  const [totalPrice, setTotalPrice] = useState(0);
+  const [orderData, setOrderData] = useState({
+    username : JSON.parse(sessionStorage.getItem("userData"))[0].nickname,
+    phone : JSON.parse(sessionStorage.getItem("userData"))[0].phone,
+    address1 : JSON.parse(sessionStorage.getItem("userData"))[0].address1,
+    address2 : JSON.parse(sessionStorage.getItem("userData"))[0].address2,
+    address3 : JSON.parse(sessionStorage.getItem("userData"))[0].address3,
+    name : "",
+    quantity : 0,
+    price : 0
+  });
+  const [orderTransfer, setOrderTransfer] = useState(false);
+
+  useEffect(() => {
+    const userIdInput = JSON.parse(sessionStorage.getItem("userData"))[0].userid;
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", `http://localhost:3001/order_item?userid=${userIdInput}`);
+    xhr.setRequestHeader("content-type", "application-json");
+    xhr.send();
+
+    xhr.onload = () => {
+      if (xhr.status === 200) {
+        const items = JSON.parse(xhr.response);
+
+        console.log(items);
+        setOrderItemLists(items);
+        setTotalPrice(calculateTotalPrice);
+      }
+    };
+
+    console.log("JSON.parse(sessionStorage.getItem('userData') : ",JSON.parse(sessionStorage.getItem('userData')));
+  }, []);
+
+  
+
+  // useEffect(() => {
+  //   console.log(addressObj);
+  //   setOrderData({
+  //     ...orderData, 
+  //     address1: addressObj.zonecode,
+  //     address2: addressObj.fullAddress
+  //   })
+  // }, [addressObj]);
+
+  const calculateTotalPrice = () => {
+    let result = orderItemLists.reduce((acc, cur, index) => {
+      return acc + cur.price;
+    }, 0);
+
+    return result;
+  }
+
+  useEffect(() => {
+    console.log('new', orderData);
+    // if (JSON.stringify(orderData) !== '{}') {
+      if (orderTransfer === true) {
+      console.log('if문 안쪽');
+      const xhr = new XMLHttpRequest();
+      const data = JSON.stringify(orderData);
+      
+      xhr.open("POST", "http://localhost:3001/order");
+      xhr.setRequestHeader("content-type", "application/json");
+      xhr.send(data);
+      
+      xhr.onload = () => {
+          if (xhr.status === 201) {
+              console.log('성공');
+              
+              //     navigate('/cart');
+              //     // console.log("cartItem222 : ", cartItem);
+              //   }
+              } else {
+                  console.log(xhr.status, xhr.statusText);
+        }
+      };
+    }
+    console.log('if문 바깥쪽');
+    setOrderTransfer(false);
+  }, [orderTransfer]);
+
+  const handleOrder = () => {
+    setOrderData((prevState) => {
+      return {
+        ...prevState,
+        name : orderItemLists[0].name,
+        quantity : orderItemLists[0].quantity,
+        price : orderItemLists[0].price
+      }
+    })
+    setOrderTransfer(true);
+    console.log("orderData : ", orderData);
+  }
+
+  return (
+    <div class="order">
       <div class="wrapper">
         {/* <Header /> */}
         <div class="main">
           <div class="container-2">
-            <div class="title"><div class="title-msg">주문</div></div>
+            <div class="title">
+              <div class="title-msg">주문</div>
+            </div>
             <div class="row">
               <div class="item-order-left">
-                <div class="item-order-item">
-                  <div class="item-order-item-img"></div>
-                  <div class="item-order-item-info">
-                    <div class="item-order-item-name">나이키2</div>
-                    <div class="item-order-item-2">수량 : 1</div>
-                    <div class="item-order-item-2">210,000원</div>
-                  </div>
-                </div>
-                <div class="item-order-item">
-                  <div class="item-order-item-img-2"></div>
-                  <div class="item-order-item-info">
-                    <div class="item-order-item-name">나이키2</div>
-                    <div class="item-order-item-2">수량 : 1</div>
-                    <div class="item-order-item-2">210,000원</div>
-                  </div>
-                </div>
+                <ul>
+                  {orderItemLists.map((orderItem, index) => {
+                    return (
+                      <li key={index} class="item-order-item">
+                        <img class="item-order-item-img" src={orderItem.img} />
+                        <div class="item-order-item-info">
+                          <div class="item-order-item-name">{orderItem.name}</div>
+                          <div class="item-order-item-2">수량 : {orderItem.quantity}</div>
+                          <div class="item-order-item-2">{orderItem.price}원</div>
+                        </div>
+                      </li>
+                    );
+                  })}
+                </ul>
                 <div class="item-order-item-name-wrapper">
-                  <div class="item-order-item-name-2">합계 금액 : 420,000원</div>
+                  <div class="item-order-item-name-2">
+                    합계 금액 : {totalPrice}원
+                  </div>
                 </div>
               </div>
               <div class="item-order-right">
                 <div class="div-2">
                   <div class="text-wrapper-2">수령인</div>
-                  <div class="home-search-input"></div>
+                  <input class="home-search-input" 
+                    value={JSON.parse(sessionStorage.getItem("userData"))[0].nickname} 
+                    onChange={(e) =>
+                      setOrderData((prevState) => {
+                        return { ...prevState, username: e.target.value };
+                      })
+                    }
+                  >
+                   </input>
                 </div>
                 <div class="div-2">
                   <div class="text-wrapper-2">전화번호</div>
-                  <div class="home-search-input"></div>
+                  <input class="home-search-input"
+                    value={JSON.parse(sessionStorage.getItem("userData"))[0].phone}
+                    onChange={(e) =>
+                      setOrderData((prevState) => {
+                        return { ...prevState, phone: e.target.value };
+                      })
+                    }
+                  >
+                  </input>
                 </div>
                 <div class="item-order-user">
                   <div class="text-wrapper-2">주소</div>
-                  <div class="home-search-input-2"></div>
-                  <div class="button-buy"><div class="button-buy-text">우편번호 찾기</div></div>
-                  <div class="home-search-input"></div>
-                  <div class="home-search-input"></div>
+                  <input class="home-search-input-2" 
+                    value={addressObj.zonecode || JSON.parse(sessionStorage.getItem("userData"))[0].address1} readOnly>
+                  </input>
+                  <Post setAddressObj={setAddressObj}/>
+                  <input class="home-search-input" 
+                    value={addressObj.fullAddress || JSON.parse(sessionStorage.getItem("userData"))[0].address2} readOnly>
+                  </input>
+                  <input class="home-search-input" 
+                    value={JSON.parse(sessionStorage.getItem("userData"))[0].address3}
+                    onChange={(e) =>
+                      setOrderData((prevState) => {
+                        return { ...prevState, address3: e.target.value };
+                      })
+                    }
+                  >
+                  </input>
                 </div>
                 <div class="item-detail-hr"></div>
                 <div class="item-detail-button">
-                  <div class="button-buy-text-wrapper"><div class="button-buy-text-2">주문하기</div></div>
+                  <div class="button-buy-text-wrapper">
+                    <div class="button-buy-text-2" onClick={handleOrder}>주문하기</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-       {/* <Footer /> */}
+        {/* <Footer /> */}
       </div>
     </div>
-    )
+  );
 }
 
 export default Order;

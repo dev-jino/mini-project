@@ -7,8 +7,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import prev from "../assets/images/prev.png"
-import next from "../assets/images/next.png"
+
 import Pagination from "react-js-pagination";
 
 function Search() {

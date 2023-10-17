@@ -1,0 +1,7 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    align-items: center;
+    position: relative;
+  }

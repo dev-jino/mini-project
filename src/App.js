@@ -28,9 +28,6 @@ function App() {
             </Route>
           <Route element={<Layout />}>
             <Route path='/search-result' element={<Search />} />
-            {/* <Route path='/item-detail/' element={<ItemDetail />}>
-              <Route path=':item' element={<ItemDetail />} />
-            </Route> */}
             <Route path='/order' element={<Order />} />
             <Route path='/order-check' element={<OrderCheck />} />
             <Route path='/login' element={<Login />} />

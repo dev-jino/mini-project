@@ -57,7 +57,6 @@ function Search() {
             <div className="title"><div className="title-msg">{item}에 대한 검색 결과</div></div>
             <div className="row">
               {currentPost.map((f_item, index) => {
-                console.log(f_item)
                 return (
                   <ul key={index} className="home-item">
                     <li key={index}>

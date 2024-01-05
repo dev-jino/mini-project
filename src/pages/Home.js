@@ -56,7 +56,7 @@ function Home() {
                     <div class="div">
                         <div class="title"><div class="title-msg">이런 상품 어때요?</div></div>
                         <div class="row">
-                            {itemLists.sort(() => Math.random() - 0.5).slice(0, 4).map((item, index) => {
+                            {itemLists.slice(0, 4).map((item, index) => {
                                 console.log(itemLists, item);
                                 return (
                                     <ul key={index} className="home-item">

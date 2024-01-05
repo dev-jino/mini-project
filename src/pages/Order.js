@@ -62,9 +62,7 @@ function Order() {
 
   useEffect(() => {
     console.log('new', orderData);
-    // if (JSON.stringify(orderData) !== '{}') {
       if (orderTransfer === true) {
-      console.log('if문 안쪽');
       const xhr = new XMLHttpRequest();
       const data = JSON.stringify(orderData);
       
@@ -75,10 +73,6 @@ function Order() {
       xhr.onload = () => {
           if (xhr.status === 201) {
               console.log('성공');
-              
-              //     navigate('/cart');
-              //     // console.log("cartItem222 : ", cartItem);
-              //   }
               } else {
                   console.log(xhr.status, xhr.statusText);
         }

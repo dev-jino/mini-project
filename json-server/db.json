@@ -3,9 +3,9 @@
     {
       "idx": 0,
       "category": "",
-      "name": "테스트1",
+      "name": "나이키 덩크 로우 레트로",
       "price": 11111,
-      "img": "/static/media/home_item_img.f4b6268d2ca26c746d15.png",
+      "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b1bcbca4-e853-4df7-b329-5be3c61ee057/%EB%8D%A9%ED%81%AC-%EB%A1%9C%EC%9A%B0-%EB%A0%88%ED%8A%B8%EB%A1%9C-%EB%82%A8%EC%84%B1-%EC%8B%A0%EB%B0%9C-bDdzzUjf.png",
       "quantity": 1,
       "reg_date": ""
     },
@@ -98,6 +98,15 @@
       "img": "/static/media/home_item_img.f4b6268d2ca26c746d15.png",
       "quantity": 1,
       "reg_date": ""
+    },
+    {
+      "idx": 11,
+      "category": "",
+      "name": "테스트99",
+      "price": 11111,
+      "img": "/static/media/home_item_img.f4b6268d2ca26c746d15.png",
+      "quantity": 1,
+      "reg_date": ""
     }
   ],
   "user": [
@@ -106,38 +115,39 @@
       "userid": "3085794922",
       "nickname": "김건일",
       "email": "",
-      "phone": "010-1234-5678",
-      "address1": "12738",
-      "address2": "경기 광주시 행정타운로 50(송정동, 광주시청)",
-      "address3": "",
+      "phone": "111111111",
+      "address1": "13636",
+      "address2": "경기 성남시 분당구 성남대로 지하 55(구미동, 오리역)",
+      "address3": "111",
       "status": 1
     }
   ],
-  "cart": [],
-  "cartItem": [],
-  "order": [],
-  "order_item": [
+  "cart": [
     {
       "category": "",
-      "idx": 6,
+      "idx": 8,
       "img": "/static/media/home_item_img.f4b6268d2ca26c746d15.png",
-      "name": "테스트7",
+      "name": "나이키",
       "price": 11111,
       "quantity": 1,
       "reg_date": "",
       "userid": "3085794922",
       "id": 1
-    },
+    }
+  ],
+  "cartItem": [],
+  "order": [],
+  "order_item": [
     {
       "category": "",
-      "idx": 6,
+      "idx": 8,
       "img": "/static/media/home_item_img.f4b6268d2ca26c746d15.png",
-      "name": "테스트7",
+      "name": "나이키",
       "price": 11111,
       "quantity": 1,
       "reg_date": "",
       "userid": "3085794922",
-      "id": 2
+      "id": 1
     }
   ]
 }

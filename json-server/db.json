@@ -4,7 +4,7 @@
       "idx": 0,
       "category": "",
       "name": "나이키 덩크 로우 레트로",
-      "price": 11111,
+      "price": 139000,
       "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b1bcbca4-e853-4df7-b329-5be3c61ee057/%EB%8D%A9%ED%81%AC-%EB%A1%9C%EC%9A%B0-%EB%A0%88%ED%8A%B8%EB%A1%9C-%EB%82%A8%EC%84%B1-%EC%8B%A0%EB%B0%9C-bDdzzUjf.png",
       "quantity": 1,
       "reg_date": ""
@@ -12,27 +12,27 @@
     {
       "idx": 1,
       "category": "",
-      "name": "테스트2",
-      "price": 11111,
-      "img": "/static/media/home_item_img.f4b6268d2ca26c746d15.png",
+      "name": "아디다스 슈퍼스타",
+      "price": 139000,
+      "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/7ed0855435194229a525aad6009a0497_9366/White_EG4958_01_standard.jpg",
       "quantity": 1,
       "reg_date": ""
     },
     {
       "idx": 2,
       "category": "",
-      "name": "테스트3",
-      "price": 11111,
-      "img": "/static/media/home_item_img.f4b6268d2ca26c746d15.png",
+      "name": "에어 조던 1 미드",
+      "price": 159000,
+      "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/1a629c8d-43d9-43a8-a706-492d0686cdf7/%EC%97%90%EC%96%B4-%EC%A1%B0%EB%8D%98-1-%EB%AF%B8%EB%93%9C-%EB%82%A8%EC%84%B1-%EC%8B%A0%EB%B0%9C-Fpo9YM44.png",
       "quantity": 1,
       "reg_date": ""
     },
     {
       "idx": 3,
       "category": "",
-      "name": "테스트4",
-      "price": 11111,
-      "img": "/static/media/home_item_img.f4b6268d2ca26c746d15.png",
+      "name": "나이키 데이브레이크 빈티지",
+      "price": 139000,
+      "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b65c1cc5-5550-4c69-a2ef-7c9e21e4b64a/%EB%8D%B0%EC%9D%B4%EB%B8%8C%EB%A0%88%EC%9D%B4%ED%81%AC-%EB%B9%88%ED%8B%B0%EC%A7%80-%EC%97%AC%EC%84%B1-%EC%8B%A0%EB%B0%9C-0UeI0XNc.png",
       "quantity": 1,
       "reg_date": ""
     },
@@ -125,10 +125,10 @@
   "cart": [
     {
       "category": "",
-      "idx": 8,
-      "img": "/static/media/home_item_img.f4b6268d2ca26c746d15.png",
-      "name": "나이키",
-      "price": 11111,
+      "idx": 3,
+      "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b65c1cc5-5550-4c69-a2ef-7c9e21e4b64a/%EB%8D%B0%EC%9D%B4%EB%B8%8C%EB%A0%88%EC%9D%B4%ED%81%AC-%EB%B9%88%ED%8B%B0%EC%A7%80-%EC%97%AC%EC%84%B1-%EC%8B%A0%EB%B0%9C-0UeI0XNc.png",
+      "name": "나이키 데이브레이크 빈티지",
+      "price": 139000,
       "quantity": 1,
       "reg_date": "",
       "userid": "3085794922",
@@ -140,14 +140,25 @@
   "order_item": [
     {
       "category": "",
-      "idx": 8,
-      "img": "/static/media/home_item_img.f4b6268d2ca26c746d15.png",
-      "name": "나이키",
-      "price": 11111,
+      "idx": 3,
+      "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b65c1cc5-5550-4c69-a2ef-7c9e21e4b64a/%EB%8D%B0%EC%9D%B4%EB%B8%8C%EB%A0%88%EC%9D%B4%ED%81%AC-%EB%B9%88%ED%8B%B0%EC%A7%80-%EC%97%AC%EC%84%B1-%EC%8B%A0%EB%B0%9C-0UeI0XNc.png",
+      "name": "나이키 데이브레이크 빈티지",
+      "price": 139000,
       "quantity": 1,
       "reg_date": "",
       "userid": "3085794922",
-      "id": 1
+      "id": 5
+    },
+    {
+      "category": "",
+      "idx": 0,
+      "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b1bcbca4-e853-4df7-b329-5be3c61ee057/%EB%8D%A9%ED%81%AC-%EB%A1%9C%EC%9A%B0-%EB%A0%88%ED%8A%B8%EB%A1%9C-%EB%82%A8%EC%84%B1-%EC%8B%A0%EB%B0%9C-bDdzzUjf.png",
+      "name": "나이키 덩크 로우 레트로",
+      "price": 139000,
+      "quantity": 1,
+      "reg_date": "",
+      "userid": "3085794922",
+      "id": 6
     }
   ]
 }
